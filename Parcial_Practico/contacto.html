@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario académico de demostración con validaciones HTML5. No envía ni guarda datos, contraseñas o archivos.">
+    <title>Contacto | Rodrigo Arévalo</title>
+    <link rel="icon" href="assets/img/marca.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <div class="contenedor cabecera__interior">
+            <a class="marca" href="index.html" aria-label="Rodrigo Arévalo, inicio">
+                <span class="marca__simbolo" aria-hidden="true">ra.</span>
+                <span>Rodrigo Arévalo<span class="marca__detalle">PORTAFOLIO WEB</span></span>
+            </a>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu__lista">
+                    <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+                    <li><a class="menu__enlace" href="acerca.html">Acerca de mí</a></li>
+                    <li><a class="menu__enlace" href="proyectos.html">Proyectos</a></li>
+                    <li><a class="menu__enlace" href="contacto.html" aria-current="page">Contacto <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido" class="contenedor">
+        <div class="encabezado-pagina">
+            <p class="etiqueta">03 / CONTACTO</p>
+            <h1>Una idea empieza<br>con una <em>conversación.</em></h1>
+            <p>En este ejercicio, la conversación empieza probando un formulario. Explora sus controles y validaciones con datos ficticios.</p>
+        </div>
+        <div class="contacto columnas">
+            <aside class="contacto__guia" aria-labelledby="titulo-demo">
+                <p class="etiqueta">ANTES DE EMPEZAR</p>
+                <h2 id="titulo-demo">Un espacio de práctica.</h2>
+                <p>Este formulario es una demostración académica. No tiene backend y no envía mensajes ni archivos.</p>
+                <ul class="lista">
+                    <li>Usa únicamente datos de prueba.</li>
+                    <li>No introduzcas contraseñas reales.</li>
+                    <li>No selecciones archivos sensibles.</li>
+                    <li>Los campos con * son obligatorios.</li>
+                </ul>
+                <section class="terminos" aria-labelledby="titulo-terminos">
+                    <h3 id="titulo-terminos">Términos de la demostración</h3>
+                    <p id="terminos-demo">Al aceptar, confirmas que entiendes el uso académico del formulario. Los datos no se transmiten ni se guardan en almacenamiento local. La contraseña y el archivo se limpian al completar la validación.</p>
+                </section>
+                <a class="enlace" href="https://github.com/Rodrigoa2197sv/Parcial-Practico-UDB-2026">Consultar el repositorio <span aria-hidden="true">↗</span></a>
+            </aside>
+            <section class="contacto__formulario" aria-labelledby="titulo-formulario">
+                <div class="formulario__cabecera">
+                    <h2 id="titulo-formulario">Prueba el formulario</h2>
+                    <span class="insignia">MODO DEMOSTRACIÓN</span>
+                </div>
+                <noscript><p class="aviso">Activa JavaScript para probar la confirmación local. El envío está deshabilitado y la política CSP impide enviar el formulario.</p></noscript>
+                <form id="formulario-contacto" class="formulario" method="post" autocomplete="off">
+                    <fieldset>
+                        <legend>01 / Datos de prueba</legend>
+                        <div class="columnas formulario__fila">
+                            <div class="campo">
+                                <label for="nombre">Nombre *</label>
+                                <input id="nombre" name="nombre" type="text" required minlength="2" maxlength="60" placeholder="Tu nombre de prueba">
+                            </div>
+                            <div class="campo">
+                                <label for="correo">Correo electrónico *</label>
+                                <input id="correo" name="correo" type="email" required maxlength="100" placeholder="nombre@example.com">
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label for="clave">Contraseña temporal de prueba *</label>
+                            <input id="clave" name="clave" type="password" required minlength="8" maxlength="64" autocomplete="new-password" placeholder="Al menos 8 caracteres ficticios" aria-describedby="ayuda-clave">
+                            <p id="ayuda-clave" class="ayuda">Solo para practicar minlength. No uses ninguna contraseña real.</p>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>02 / Acerca de tu consulta</legend>
+                        <div class="campo">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="portafolio">Comentarios sobre el portafolio</option>
+                                <option value="aprendizaje">Desarrollo web y aprendizaje</option>
+                                <option value="proyecto">Idea de proyecto académico</option>
+                            </select>
+                        </div>
+                        <fieldset class="opciones">
+                            <legend>Tipo de consulta *</legend>
+                            <div class="opciones__fila">
+                                <label class="opcion" for="consulta-academica"><input id="consulta-academica" name="tipo-consulta" type="radio" value="academica" required> Académica</label>
+                                <label class="opcion" for="consulta-colaboracion"><input id="consulta-colaboracion" name="tipo-consulta" type="radio" value="colaboracion" required> Colaboración</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="opciones">
+                            <legend>Temas de interés (opcional)</legend>
+                            <div class="opciones__fila">
+                                <label class="opcion" for="interes-html"><input id="interes-html" name="intereses" type="checkbox" value="html"> HTML</label>
+                                <label class="opcion" for="interes-css"><input id="interes-css" name="intereses" type="checkbox" value="css"> CSS</label>
+                                <label class="opcion" for="interes-js"><input id="interes-js" name="intereses" type="checkbox" value="javascript"> JavaScript</label>
+                            </div>
+                        </fieldset>
+                        <div class="campo">
+                            <label for="archivo">Archivo de prueba (opcional)</label>
+                            <input id="archivo" name="archivo" type="file" accept=".pdf,.png,.jpg,.jpeg" aria-describedby="ayuda-archivo">
+                            <p id="ayuda-archivo" class="ayuda">PDF, PNG o JPG. No se lee el contenido ni se carga a un servidor.</p>
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje de prueba *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" maxlength="600" placeholder="Escribe una idea o un comentario de prueba…" aria-describedby="ayuda-mensaje"></textarea>
+                            <p id="ayuda-mensaje" class="ayuda">Entre 10 y 600 caracteres.</p>
+                        </div>
+                    </fieldset>
+                    <label class="opcion opcion--terminos" for="acepto"><input id="acepto" name="acepto" type="checkbox" value="si" required aria-describedby="terminos-demo"> Acepto los términos de esta demostración. *</label>
+                    <div class="acciones formulario__acciones">
+                        <button id="boton-validar" class="boton boton--principal" type="submit" disabled>Validar demostración <span aria-hidden="true">↗</span></button>
+                        <button class="boton boton--secundario" type="reset">Restablecer</button>
+                    </div>
+                    <p id="resultado-formulario" class="formulario__resultado" role="status" aria-live="polite" aria-atomic="true"></p>
+                    <p class="ayuda">La validación del navegador es una primera medida. Una aplicación real también necesita validación y tratamiento seguro en el servidor.</p>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="pie">
+        <div class="contenedor pie__interior">
+            <p>© 2026 Rodrigo Arévalo<span class="pie__detalle">Hecho con fundamentos y curiosidad.</span></p>
+            <a href="https://github.com/Rodrigoa2197sv/Parcial-Practico-UDB-2026">Repositorio en GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplos académicos de HTML, CSS, formularios y Flexbox, y el portafolio del Módulo 1 de Rodrigo Arévalo.">
+    <title>Proyectos | Rodrigo Arévalo</title>
+    <link rel="icon" href="assets/img/marca.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <div class="contenedor cabecera__interior">
+            <a class="marca" href="index.html" aria-label="Rodrigo Arévalo, inicio">
+                <span class="marca__simbolo" aria-hidden="true">ra.</span>
+                <span>Rodrigo Arévalo<span class="marca__detalle">PORTAFOLIO WEB</span></span>
+            </a>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu__lista">
+                    <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+                    <li><a class="menu__enlace" href="acerca.html">Acerca de mí</a></li>
+                    <li><a class="menu__enlace" href="proyectos.html" aria-current="page">Proyectos</a></li>
+                    <li><a class="menu__enlace" href="contacto.html">Contacto <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido" class="contenedor">
+        <div class="encabezado-pagina">
+            <p class="etiqueta">02 / PROYECTOS</p>
+            <h1>Pequeñas prácticas.<br>Grandes <em>bases.</em></h1>
+            <p>Un recorrido por los fundamentos del módulo: de la primera estructura HTML a un portafolio responsive.</p>
+        </div>
+        <section class="destacado columnas" aria-labelledby="titulo-destacado">
+            <div class="destacado__texto">
+                <p class="etiqueta etiqueta--clara">PROYECTO ACTUAL / 2026</p>
+                <h2 id="titulo-destacado">Este portafolio,<br>pieza por pieza.</h2>
+                <p>Cuatro páginas conectadas, una hoja de estilos y un formulario de demostración. La evaluación final reúne lo aprendido en las primeras tres sesiones.</p>
+                <ul class="etiquetas" aria-label="Tecnologías del portafolio">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                </ul>
+                <a class="enlace enlace--claro" href="contacto.html">Probar el formulario <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="destacado__imagen">
+                <img src="assets/img/escritorio-web.svg" alt="Ilustración de la estructura de una página junto a su código HTML." width="640" height="500">
+            </div>
+        </section>
+        <section class="seccion" aria-labelledby="titulo-proyectos">
+            <div class="seccion__cabecera">
+                <div>
+                    <p class="etiqueta">BITÁCORA DE PRÁCTICA</p>
+                    <h2 id="titulo-proyectos">Ejemplos académicos del módulo.</h2>
+                </div>
+                <span class="insignia">04 EJEMPLOS</span>
+            </div>
+            <p id="nota-ejemplos" class="texto-secundario">Los siguientes proyectos, fechas y estados son ilustrativos. Representan ejercicios del curso; no se presentan como trabajos reales ni como entregas verificadas.</p>
+            <p id="ayuda-tabla" class="ayuda">En pantallas pequeñas, desliza la tabla horizontalmente. Con teclado, enfoca la tabla y utiliza las flechas.</p>
+            <div class="proyecto__desplazamiento" tabindex="0" role="region" aria-label="Tabla de proyectos académicos de ejemplo" aria-describedby="ayuda-tabla nota-ejemplos">
+                <table class="proyecto__tabla">
+                    <caption>Cuatro ejercicios ilustrativos · Ciclo académico 2026</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre del proyecto</th>
+                            <th scope="col">Tecnologías utilizadas</th>
+                            <th scope="col">Fecha de ejemplo</th>
+                            <th scope="col">Estado de ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="proyecto__nombre">01. Mi primera página semántica</span><span class="proyecto__detalle">Cabecera, contenido y navegación.</span></td>
+                            <td>HTML5</td>
+                            <td><time datetime="2026-10-24">24 oct. 2026</time></td>
+                            <td><span class="estado">Completado</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="proyecto__nombre">02. Formulario de inscripción</span><span class="proyecto__detalle">Campos etiquetados y validación nativa.</span></td>
+                            <td>HTML5 · CSS3</td>
+                            <td><time datetime="2026-10-31">31 oct. 2026</time></td>
+                            <td><span class="estado">Completado</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="proyecto__nombre">03. Página adaptable con Flexbox</span><span class="proyecto__detalle">Una composición para distintas pantallas.</span></td>
+                            <td>HTML5 · CSS3 · Flexbox</td>
+                            <td><time datetime="2026-11-07">07 nov. 2026</time></td>
+                            <td><span class="estado estado--revision">En revisión</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="proyecto__nombre">04. Portafolio con control de versiones</span><span class="proyecto__detalle">Organización del código y registro de cambios.</span></td>
+                            <td>HTML5 · CSS3 · Git/GitHub</td>
+                            <td><time datetime="2026-11-14">14 nov. 2026</time></td>
+                            <td><span class="estado estado--proceso">En desarrollo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="cierre" aria-labelledby="titulo-siguiente">
+            <div>
+                <p class="etiqueta">EL SIGUIENTE PASO</p>
+                <h2 id="titulo-siguiente">Explora la interacción.</h2>
+                <p>Prueba las validaciones del formulario sin enviar información.</p>
+            </div>
+            <a class="boton boton--principal" href="contacto.html">Ir a contacto <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="contenedor pie__interior">
+            <p>© 2026 Rodrigo Arévalo<span class="pie__detalle">Hecho con fundamentos y curiosidad.</span></p>
+            <a href="https://github.com/Rodrigoa2197sv/Parcial-Practico-UDB-2026">Repositorio en GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' https://images.unsplash.com; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil académico de Rodrigo Arévalo, estudiante de Desarrollo Web e Ingeniería en Sistemas. Habilidades en formación, herramientas e intereses.">
+    <title>Acerca de mí | Rodrigo Arévalo</title>
+    <link rel="icon" href="assets/img/marca.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <div class="contenedor cabecera__interior">
+            <a class="marca" href="index.html" aria-label="Rodrigo Arévalo, inicio">
+                <span class="marca__simbolo" aria-hidden="true">ra.</span>
+                <span>Rodrigo Arévalo<span class="marca__detalle">PORTAFOLIO WEB</span></span>
+            </a>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu__lista">
+                    <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+                    <li><a class="menu__enlace" href="acerca.html" aria-current="page">Acerca de mí</a></li>
+                    <li><a class="menu__enlace" href="proyectos.html">Proyectos</a></li>
+                    <li><a class="menu__enlace" href="contacto.html">Contacto <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido" class="contenedor">
+        <div class="encabezado-pagina">
+            <p class="etiqueta">01 / ACERCA DE MÍ</p>
+            <h1>El perfil detrás<br>del <em>código.</em></h1>
+            <p>Curiosidad por la tecnología. Interés por resolver problemas. Un aprendizaje que toma forma en la web.</p>
+        </div>
+        <section class="perfil columnas" aria-labelledby="titulo-perfil">
+            <figure class="perfil__foto">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=960&amp;h=960&amp;q=80" alt="Fotografía ilustrativa de una computadora con código en un escritorio de desarrollo web." width="480" height="480" referrerpolicy="no-referrer">
+                <figcaption>Imagen ilustrativa de desarrollo web; no es una fotografía personal.<br>Foto de <a href="https://unsplash.com/photos/a-macbook-with-lines-of-code-on-its-screen-on-a-busy-desk-m_HRfLhgABo">Christopher Gower en Unsplash</a>.</figcaption>
+            </figure>
+            <div class="perfil__texto">
+                <p class="etiqueta">RODRIGO ARÉVALO</p>
+                <h2 id="titulo-perfil">Construyendo mis primeras bases.</h2>
+                <p>Mi perfil está en formación en Desarrollo Web e Ingeniería en Sistemas. Me interesa comprender cómo una idea se convierte en una página clara, accesible y útil.</p>
+                <p>En el Módulo 1 de Fundamentos de Desarrollo Web, el recorrido comienza con HTML semántico, continúa con CSS externo y llega a la organización de interfaces con Flexbox.</p>
+                <p>Este portafolio reúne esos fundamentos en una experiencia de cuatro páginas. Es un proyecto académico: cada sección busca mostrar lo aprendido con código sencillo y comprensible.</p>
+                <a class="enlace" href="proyectos.html">Explorar ejemplos académicos <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+        <section class="seccion" aria-labelledby="titulo-habilidades">
+            <div class="seccion__cabecera">
+                <div>
+                    <p class="etiqueta">EN CONSTANTE APRENDIZAJE</p>
+                    <h2 id="titulo-habilidades">Habilidades, herramientas e intereses.</h2>
+                </div>
+            </div>
+            <div class="columnas capacidades">
+                <article class="capacidad">
+                    <span class="indice">01 / HABILIDADES EN FORMACIÓN</span>
+                    <h3>Las bases de la web</h3>
+                    <ul class="lista">
+                        <li>Estructura semántica con HTML5.</li>
+                        <li>Formularios y validación nativa.</li>
+                        <li>Estilos compartidos con CSS3.</li>
+                        <li>Diseño responsive con Flexbox.</li>
+                        <li>Eventos sencillos en JavaScript.</li>
+                    </ul>
+                </article>
+                <article class="capacidad">
+                    <span class="indice">02 / HERRAMIENTAS DEL PROYECTO</span>
+                    <h3>Un entorno sencillo</h3>
+                    <ul class="lista">
+                        <li>Visual Studio Code para editar.</li>
+                        <li>Navegador y herramientas de desarrollo.</li>
+                        <li>Live Server para revisar localmente.</li>
+                        <li>Git para el control de versiones.</li>
+                        <li>GitHub como repositorio del proyecto.</li>
+                    </ul>
+                </article>
+                <article class="capacidad">
+                    <span class="indice">03 / INTERESES PROFESIONALES</span>
+                    <h3>Hacia dónde explorar</h3>
+                    <ul class="lista">
+                        <li>Desarrollo de interfaces web.</li>
+                        <li>Accesibilidad y experiencia de usuario.</li>
+                        <li>Diseño adaptable a dispositivos.</li>
+                        <li>Buenas prácticas de seguridad web.</li>
+                        <li>Organización de proyectos de software.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="invitacion" aria-labelledby="titulo-aprender">
+            <div>
+                <p class="etiqueta etiqueta--clara">APRENDIZAJE EN ACCIÓN</p>
+                <h2 id="titulo-aprender">La práctica conecta las piezas.</h2>
+                <p>Revisa los ejemplos que dan contexto a las habilidades de este portafolio.</p>
+            </div>
+            <a class="boton boton--claro" href="proyectos.html">Conocer los proyectos <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="contenedor pie__interior">
+            <p>© 2026 Rodrigo Arévalo<span class="pie__detalle">Hecho con fundamentos y curiosidad.</span></p>
+            <a href="https://github.com/Rodrigoa2197sv/Parcial-Practico-UDB-2026">Repositorio en GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+    </footer>
+</body>
+</html>

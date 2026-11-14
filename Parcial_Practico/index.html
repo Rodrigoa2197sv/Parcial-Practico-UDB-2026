@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio académico de Rodrigo Arévalo: fundamentos de desarrollo web, proyectos de ejemplo y aprendizaje en HTML, CSS y JavaScript.">
+    <title>Rodrigo Arévalo | Portafolio web</title>
+    <link rel="icon" href="assets/img/marca.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera">
+        <div class="contenedor cabecera__interior">
+            <a class="marca" href="index.html" aria-label="Rodrigo Arévalo, inicio">
+                <span class="marca__simbolo" aria-hidden="true">ra.</span>
+                <span>Rodrigo Arévalo<span class="marca__detalle">PORTAFOLIO WEB</span></span>
+            </a>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu__lista">
+                    <li><a class="menu__enlace" href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a class="menu__enlace" href="acerca.html">Acerca de mí</a></li>
+                    <li><a class="menu__enlace" href="proyectos.html">Proyectos</a></li>
+                    <li><a class="menu__enlace" href="contacto.html">Contacto <span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido" class="contenedor">
+        <section class="portada" aria-labelledby="titulo-inicio">
+            <div class="portada__texto">
+                <p class="etiqueta"><span class="punto" aria-hidden="true"></span> DESARROLLO WEB · EN FORMACIÓN</p>
+                <h1 id="titulo-inicio">Ideas claras.<br>Webs que <em>funcionan.</em></h1>
+                <p class="portada__descripcion">Soy Rodrigo Arévalo, estudiante de Desarrollo Web e Ingeniería en Sistemas. Este es mi espacio para convertir lo aprendido en experiencias web sencillas y bien construidas.</p>
+                <div class="acciones">
+                    <a class="boton boton--principal" href="proyectos.html">Explorar proyectos <span aria-hidden="true">↗</span></a>
+                    <a class="enlace" href="acerca.html">Conoce mi perfil <span aria-hidden="true">→</span></a>
+                </div>
+                <p class="portada__nota">HTML5 · CSS3 · JavaScript básico</p>
+            </div>
+            <div class="portada__visual">
+                <img class="portada__imagen" src="assets/img/escritorio-web.svg" alt="Ilustración de un editor de código y una página web construida con HTML y CSS." width="640" height="500">
+                <aside class="nota" aria-labelledby="titulo-bitacora">
+                    <span class="nota__numero" aria-hidden="true">01 /</span>
+                    <div>
+                        <h2 id="titulo-bitacora">Aprender. Construir. Mejorar.</h2>
+                        <p>Fundamentos de Desarrollo Web<br>Módulo 1 · Evaluación final · 2026</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section class="seccion" aria-labelledby="titulo-enfoque">
+            <div class="seccion__cabecera">
+                <div>
+                    <p class="etiqueta">EL ENFOQUE</p>
+                    <h2 id="titulo-enfoque">Una buena web empieza por sus bases.</h2>
+                </div>
+                <p class="seccion__resumen">Estructura con sentido, diseño que se adapta y atención a cada interacción.</p>
+            </div>
+            <div class="columnas principios">
+                <article class="principio">
+                    <span class="indice">01 / ESTRUCTURA</span>
+                    <h3>Contenido con propósito</h3>
+                    <p>HTML semántico para organizar la información, recorrer las páginas y comprender cada sección.</p>
+                </article>
+                <article class="principio">
+                    <span class="indice">02 / DISEÑO</span>
+                    <h3>Una web para cada pantalla</h3>
+                    <p>CSS y Flexbox para mantener el contenido legible en móviles, tablets y computadoras.</p>
+                </article>
+                <article class="principio">
+                    <span class="indice">03 / INTERACCIÓN</span>
+                    <h3>Detalles que orientan</h3>
+                    <p>Etiquetas claras, foco visible y validaciones que ayudan a completar un formulario de demostración.</p>
+                </article>
+            </div>
+        </section>
+        <section class="invitacion" aria-labelledby="titulo-recorrido">
+            <div>
+                <p class="etiqueta etiqueta--clara">DEL CONCEPTO A LA PRÁCTICA</p>
+                <h2 id="titulo-recorrido">Cada ejercicio, un paso más.</h2>
+                <p>Explora una selección de ejemplos académicos: HTML semántico, formularios, Flexbox y control de versiones.</p>
+            </div>
+            <a class="boton boton--claro" href="proyectos.html">Ver el recorrido <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+    <footer class="pie">
+        <div class="contenedor pie__interior">
+            <p>© 2026 Rodrigo Arévalo<span class="pie__detalle">Hecho con fundamentos y curiosidad.</span></p>
+            <a href="https://github.com/Rodrigoa2197sv/Parcial-Practico-UDB-2026">Repositorio en GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+    </footer>
+</body>
+</html>
