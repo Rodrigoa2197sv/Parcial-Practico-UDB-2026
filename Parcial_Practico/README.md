@@ -66,14 +66,16 @@ Cada página incluye una política CSP en el `head`. Permite los estilos, script
 
 Repositorio: [Rodrigoa2197sv/Parcial-Practico-UDB-2026](https://github.com/Rodrigoa2197sv/Parcial-Practico-UDB-2026).
 
-Para habilitar GitHub Pages:
+Sitio web: [Portafolio de Rodrigo Arévalo](https://rodrigoa2197sv.github.io/Parcial-Practico-UDB-2026/Parcial_Practico/).
+
+Configuración de GitHub Pages:
 
 1. Entrar en **Settings → Pages** dentro del repositorio.
 2. Seleccionar **Deploy from a branch**, rama `main` y carpeta `/(root)`.
 3. Guardar la configuración y esperar a que termine el despliegue.
 4. Abrir la dirección indicada por GitHub y acceder a `Parcial_Practico/`, donde está el sitio.
 
-La URL pública se agregará cuando GitHub Pages esté habilitado.
+El sitio está publicado desde la rama `main`. Los cambios que se suban a esta rama actualizarán la publicación automáticamente.
 
 ## Imagen
 
