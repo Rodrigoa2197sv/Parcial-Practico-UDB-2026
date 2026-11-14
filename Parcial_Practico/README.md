@@ -25,7 +25,8 @@ Parcial_Practico/
 └── assets/
     └── img/
         ├── escritorio-web.svg
-        └── marca.svg
+        ├── marca.svg
+        └── rodrigo-arevalo.png
 ```
 
 ## Páginas
@@ -41,7 +42,7 @@ Parcial_Practico/
 2. Instalar la extensión Live Server si aún no está disponible.
 3. Hacer clic derecho sobre `index.html` y seleccionar **Open with Live Server**.
 
-También se puede abrir `index.html` directamente desde el navegador. La imagen de la página Acerca de mí necesita conexión a internet.
+También se puede abrir `index.html` directamente desde el navegador.
 
 ## Diseño responsive
 
@@ -59,7 +60,7 @@ La validación del navegador no sustituye la validación del servidor. Para reci
 
 ## Seguridad
 
-Cada página incluye una política CSP en el `head`. Permite los estilos, scripts e imágenes del proyecto, bloquea los envíos del formulario y evita ejecutar código inline. En `acerca.html` se permite además el dominio `images.unsplash.com` para cargar la imagen.
+Cada página incluye una política CSP en el `head`. Permite los estilos, scripts e imágenes del proyecto, bloquea los envíos del formulario y evita ejecutar código inline. Todos los recursos se cargan desde el propio sitio.
 
 ## Repositorio y publicación
 
@@ -76,4 +77,4 @@ La URL pública se agregará cuando GitHub Pages esté habilitado.
 
 ## Imagen
 
-La página Acerca de mí utiliza una imagen ilustrativa de [Christopher Gower en Unsplash](https://unsplash.com/photos/a-macbook-with-lines-of-code-on-its-screen-on-a-busy-desk-m_HRfLhgABo), bajo la [licencia de Unsplash](https://unsplash.com/license). La fotografía personal queda pendiente de incorporar.
+La fotografía personal de Rodrigo Arévalo se encuentra en `assets/img/rodrigo-arevalo.png` y se muestra en la página Acerca de mí.
