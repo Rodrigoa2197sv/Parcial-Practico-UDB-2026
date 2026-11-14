@@ -4,6 +4,11 @@ Portafolio de Rodrigo Arévalo para la evaluación final del curso Desarrollo en
 
 El proyecto reúne los temas del módulo en un sitio de cuatro páginas: HTML semántico, estilos con CSS, diseño responsive y un formulario con JavaScript básico.
 
+## Enlaces
+
+- [Repositorio en GitHub](https://github.com/Rodrigoa2197sv/Parcial-Practico-UDB-2026)
+- [Sitio publicado en GitHub Pages](https://rodrigoa2197sv.github.io/Parcial-Practico-UDB-2026/Parcial_Practico/)
+
 ## Tecnologías
 
 - HTML5
@@ -63,10 +68,6 @@ La validación del navegador no sustituye la validación del servidor. Para reci
 Cada página incluye una política CSP en el `head`. Permite los estilos, scripts e imágenes del proyecto, bloquea los envíos del formulario y evita ejecutar código inline. Todos los recursos se cargan desde el propio sitio.
 
 ## Repositorio y publicación
-
-Repositorio: [Rodrigoa2197sv/Parcial-Practico-UDB-2026](https://github.com/Rodrigoa2197sv/Parcial-Practico-UDB-2026).
-
-Sitio web: [Portafolio de Rodrigo Arévalo](https://rodrigoa2197sv.github.io/Parcial-Practico-UDB-2026/Parcial_Practico/).
 
 Configuración de GitHub Pages:
 
